@@ -1,11 +1,14 @@
 from flask import Blueprint
 from mongoengine import *
 
+# Blueprint for building endpoints
 building_endpoints = Blueprint('building_endpoints', __name__,
                                template_folder='templates')
-connect(host="mongodb://localhost:27017/student-dorm")
 
+# Connect to MongoDB Atlas using your connection string
+connect(host="mongodb+srv://<user>:<user>@cluster0.mwim6z3.mongodb.net/student-dorm?retryWrites=true&w=majority")
 
+# MongoEngine Document for Building
 class Building(Document):
     building_number = StringField()
     gender = StringField()
