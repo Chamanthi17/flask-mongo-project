@@ -3,7 +3,7 @@ from mongoengine import *
 
 request_endpoints = Blueprint('request_endpoints', __name__,
                               template_folder='templates')
-connect(host="mongodb://localhost:27017/student-dorm")
+connect(host="mongodb+srv://<user>:<user>@cluster0.mwim6z3.mongodb.net/student-dorm?retryWrites=true&w=majority")
 
 request_count = 0
 
