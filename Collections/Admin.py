@@ -6,7 +6,7 @@ admin_endpoints = Blueprint('admin_endpoints', __name__,
                             template_folder='templates')
 
 # MongoDB Atlas connection string (replace <username>, <password>, and <dbname>)
-connect(host="mongodb+srv://<user>:<user>@cluster0.mwim6z3.mongodb.net/student-dorm?retryWrites=true&w=majority")
+connect(host="mongodb+srv://<user>:<user>@cluster0.mwim6z3.mongodb.net/?retryWrites=true&w=majority")
 
 # MongoEngine Document (Admin model)
 class Admin(Document):
