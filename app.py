@@ -1,7 +1,12 @@
 from flask import Flask, render_template
-
+import os
+from mongoengine import connect
+from dotenv import load_dotenv
 from Collections.Student import student_endpoints
 
+
+load_dotenv()
+connect(host=os.getenv("MONGO_URI"))
 app = Flask(__name__)
 app.register_blueprint(student_endpoints)
 
@@ -15,6 +20,7 @@ def hello_world():
 def add_header(response):
     response.cache_control.no_store = True
     return response
+
 
 
 if __name__ == '__main__':
