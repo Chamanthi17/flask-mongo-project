@@ -80,14 +80,14 @@ def render_home_for_student(student, isTopUpNeeded,is_customer_has_request):
 @student_endpoints.route("/student/validate", methods=['POST'])
 def validate_student():
     if request.method == 'POST':
-        reuqest_id = request.form.get('loginStudentId')
+        request_id = request.form.get('loginStudentId')
         password = request.form.get('loginPassword')
-        students = Student.objects(student_id__exact=reuqest_id)
+        students = Student.objects(student_id__exact=request_id)
         if len(students) > 0:
             student = students[0]
             return validate_get_student_page(password, student)
         else:
-            admins = Admin.objects(admin_id__exact=reuqest_id)
+            admins = Admin.objects(admin_id__exact=request_id)
             if len(admins) > 0:
                 admin = admins[0]
                 return validate_get_admin_page(password, admin)
