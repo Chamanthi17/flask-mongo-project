@@ -9,7 +9,7 @@ from Collections.StudentRequest import *
 
 student_endpoints = Blueprint('student_endpoints', __name__,
                               template_folder='templates')
-connect(host="mongodb+srv://<user>:<user>@cluster0.mwim6z3.mongodb.net/?retryWrites=true&w=majority")
+connect(host="mongodb+srv://user:user@cluster0.mwim6z3.mongodb.net/?retryWrites=true&w=majority")
 
 
 class Student(Document):
