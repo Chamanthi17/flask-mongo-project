@@ -6,7 +6,8 @@ from Collections.Student import student_endpoints
 
 
 load_dotenv()
-connect(host=os.getenv("MONGO_URI"))
+if not connect.is_connected():
+    connect(host=os.getenv("MONGO_URI"))
 app = Flask(__name__)
 app.register_blueprint(student_endpoints)
 
