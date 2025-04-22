@@ -6,7 +6,7 @@ payment_endpoints = Blueprint('payment_endpoints', __name__,
                               template_folder='templates')
 
 # Connect to MongoDB Atlas (replace <your-username> and <your-password>)
-connect(host="mongodb+srv://user:user@cluster0.mwim6z3.mongodb.net/?retryWrites=true&w=majority")
+connect(host="mongodb+srv://user:user@cluster0.mwim6z3.mongodb.net/student-dorm?retryWrites=true&w=majority")
 
 # MongoEngine Document for Payment
 class Payment(Document):
