@@ -60,7 +60,7 @@ Create a .env file in the project root (do NOT commit this file):
 MONGO_URI=your_mongodb_connection_string_here
 Optionally, use the .env.example file as a template for environment variables (create this file if you want):
 
-# .env.example
+ .env.example
 MONGO_URI=your_mongodb_connection_string_here
 If your app uses python-dotenv (recommended), it will automatically load variables from .env.
 
