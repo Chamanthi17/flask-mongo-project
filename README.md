@@ -1,4 +1,5 @@
 🏨 Student Accommodation Management System
+
 A user-friendly web application that streamlines the process of on-campus housing allocation in universities. Students can log in to search for available rooms, request accommodations, make reservations, and manage payments. Admins can monitor requests, assign rooms, and track transactions — all in one place.
 
 This project ensures better data organization, security, and a more seamless experience for both students and administrators.
