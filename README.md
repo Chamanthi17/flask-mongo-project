@@ -4,7 +4,7 @@ A user-friendly web application that streamlines the process of on-campus housin
 
 This project ensures better data organization, security, and a more seamless experience for both students and administrators.
 
-#🧰 Tech Stack
+# 🧰 Tech Stack
 
 Backend: Python (Flask)
 
