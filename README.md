@@ -1,10 +1,10 @@
-🏨 Student Accommodation Management System
+# 🏨 Student Accommodation Management System
 
 A user-friendly web application that streamlines the process of on-campus housing allocation in universities. Students can log in to search for available rooms, request accommodations, make reservations, and manage payments. Admins can monitor requests, assign rooms, and track transactions — all in one place.
 
 This project ensures better data organization, security, and a more seamless experience for both students and administrators.
 
-🧰 Tech Stack
+#🧰 Tech Stack
 
 Backend: Python (Flask)
 
@@ -14,7 +14,7 @@ Frontend: HTML, CSS (Jinja2 templates)
 
 Hosting: Render (Web Service)
 
-🗄️ MongoDB Collections
+# 🗄️ MongoDB Collections
 
 The data is structured using separate MongoDB collections to simplify access and manipulation:
 
@@ -26,7 +26,7 @@ Students	Student profiles and login data
 Requests	Student room requests
 Payment	Records of accommodation payments
 
-📦 Features
+# 📦 Features
 
 🔐 Student login and dashboard
 
@@ -41,7 +41,7 @@ Payment	Records of accommodation payments
 📊 Modular backend for scalability
 
 
-🛠 Local Setup (Improved)
+# 🛠 Local Setup (Improved)
 
 1. Clone the Repository
 git clone https://github.com/your-username/student-accommodation-system.git
@@ -77,7 +77,7 @@ Open your browser at:
 http://localhost:5000
 
 
-⚠️ Common Issues
+# ⚠️ Common Issues
 
 MongoDB Connection Errors:
 Check if your MONGO_URI is correct, and whitelist your IP in MongoDB Atlas.
