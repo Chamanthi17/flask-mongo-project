@@ -5,6 +5,7 @@ A user-friendly web application that streamlines the process of on-campus housin
 This project ensures better data organization, security, and a more seamless experience for both students and administrators.
 
 🧰 Tech Stack
+
 Backend: Python (Flask)
 
 Database: MongoDB (Atlas)
@@ -14,9 +15,10 @@ Frontend: HTML, CSS (Jinja2 templates)
 Hosting: Render (Web Service)
 
 🗄️ MongoDB Collections
+
 The data is structured using separate MongoDB collections to simplify access and manipulation:
 
-Collection Name	Purpose
+
 Admin	Stores admin login credentials and roles
 Building	Contains details of each campus building
 Rooms	Information about rooms in each building
@@ -25,6 +27,7 @@ Requests	Student room requests
 Payment	Records of accommodation payments
 
 📦 Features
+
 🔐 Student login and dashboard
 
 📝 Submit and track room requests
@@ -39,6 +42,7 @@ Payment	Records of accommodation payments
 
 
 🛠 Local Setup (Improved)
+
 1. Clone the Repository
 git clone https://github.com/your-username/student-accommodation-system.git
 cd student-accommodation-system
@@ -74,6 +78,7 @@ http://localhost:5000
 
 
 ⚠️ Common Issues
+
 MongoDB Connection Errors:
 Check if your MONGO_URI is correct, and whitelist your IP in MongoDB Atlas.
 
@@ -83,8 +88,5 @@ Change the port in app.run() if 5000 is busy.
 Environment Variables Not Loaded:
 Ensure .env file exists and, if needed, you installed python-dotenv and imported it in your app.py like:
 
-python
-Copy
-Edit
 from dotenv import load_dotenv
 load_dotenv()
